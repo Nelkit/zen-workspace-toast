@@ -1,13 +1,9 @@
 #zen-workspace-toast {
   position: fixed;
-  bottom: 72px;
   left: 50%;
   transform: translateX(-50%);
-  background: var(--zen-colors-primary, #1a1a2e);
   color: #fff;
-  padding: 5px 18px;
   border-radius: 20px;
-  font-size: 13px;
   opacity: 0;
   transition: opacity 0.15s ease;
   pointer-events: none;
@@ -16,4 +12,44 @@
 
 #zen-workspace-toast.visible {
   opacity: 1;
+}
+
+/* Position */
+#zen-workspace-toast[data-position="bottom"] {
+  bottom: 72px;
+  top: unset;
+}
+
+#zen-workspace-toast[data-position="top"] {
+  top: 72px;
+  bottom: unset;
+}
+
+/* Size */
+#zen-workspace-toast[data-size="small"] {
+  padding: 5px 18px;
+  font-size: 13px;
+}
+
+#zen-workspace-toast[data-size="regular"] {
+  padding: 7px 22px;
+  font-size: 15px;
+}
+
+#zen-workspace-toast[data-size="large"] {
+  padding: 10px 28px;
+  font-size: 18px;
+}
+
+/* Background: solid */
+#zen-workspace-toast[data-background="solid"] {
+  background: var(--zen-colors-primary, #1a1a2e);
+  backdrop-filter: none;
+}
+
+/* Background: blur */
+#zen-workspace-toast[data-background="blur"] {
+  background: color-mix(in srgb, var(--zen-colors-primary, #1a1a2e) 40%, transparent);
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
 }

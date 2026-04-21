@@ -10,5 +10,42 @@
     "label": "Show workspace icon",
     "type": "checkbox",
     "defaultValue": true
+  },
+  {
+    "property": "mod.workspace-toast.position",
+    "label": "Position",
+    "type": "dropdown",
+    "value": "string",
+    "defaultValue": "bottom",
+    "placeholder": false,
+    "options": [
+      { "label": "Bottom", "value": "bottom" },
+      { "label": "Top", "value": "top" }
+    ]
+  },
+  {
+    "property": "mod.workspace-toast.size",
+    "label": "Size",
+    "type": "dropdown",
+    "value": "string",
+    "defaultValue": "small",
+    "placeholder": false,
+    "options": [
+      { "label": "Small", "value": "small" },
+      { "label": "Regular", "value": "regular" },
+      { "label": "Large", "value": "large" }
+    ]
+  },
+  {
+    "property": "mod.workspace-toast.background",
+    "label": "Background style",
+    "type": "dropdown",
+    "value": "string",
+    "defaultValue": "solid",
+    "placeholder": false,
+    "options": [
+      { "label": "Solid", "value": "solid" },
+      { "label": "Blur", "value": "blur" }
+    ]
   }
 ]
