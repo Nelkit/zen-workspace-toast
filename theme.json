@@ -2,7 +2,7 @@
   "id": "zen-workspace-toast",
   "name": "Workspace Toast",
   "description": "Shows a toast notification with the workspace icon and name when switching workspaces in onlysidebar mode.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Nelkit",
   "homepage": "https://github.com/Nelkit/zen-workspace-toast",
   "readme": "https://raw.githubusercontent.com/Nelkit/zen-workspace-toast/main/readme.md",
