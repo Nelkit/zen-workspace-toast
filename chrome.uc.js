@@ -1,6 +1,6 @@
 (() => {
   const TOAST_ID = "zen-workspace-toast";
-  const VERSION = "1.0.2";
+  const VERSION = "1.0.3";
   let hideTimeout = null;
 
   console.log(`[Workspace Toast v${VERSION}] installed and running.`);
