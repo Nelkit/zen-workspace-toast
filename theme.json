@@ -1,9 +1,22 @@
 {
+  "id": "zen-workspace-toast",
   "name": "Workspace Toast",
   "description": "Shows a toast notification with the workspace icon and name when switching workspaces in onlysidebar mode.",
   "version": "1.0.0",
-  "author": "https://github.com/Nelkit",
+  "author": "Nelkit",
   "homepage": "https://github.com/Nelkit/zen-workspace-toast",
+  "readme": "https://raw.githubusercontent.com/Nelkit/zen-workspace-toast/main/readme.md",
   "style": "chrome.css",
-  "scripts": ["chrome.mjs"]
+  "scripts": {
+    "chrome.uc.js": {
+      "name": "Workspace Toast",
+      "description": "Intercepts workspace changes and shows a toast notification.",
+      "include": [
+        "chrome://browser/content/browser.xhtml"
+      ]
+    }
+  },
+  "tags": ["workspace", "toast", "notification", "sidebar"],
+  "createdAt": "2026-04-21",
+  "updatedAt": "2026-04-21"
 }
