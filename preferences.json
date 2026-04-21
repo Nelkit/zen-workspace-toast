@@ -1,0 +1,14 @@
+[
+  {
+    "property": "mod.workspace-toast.duration",
+    "label": "Toast duration (ms)",
+    "type": "string",
+    "defaultValue": "1800"
+  },
+  {
+    "property": "mod.workspace-toast.show-icon",
+    "label": "Show workspace icon",
+    "type": "checkbox",
+    "defaultValue": true
+  }
+]

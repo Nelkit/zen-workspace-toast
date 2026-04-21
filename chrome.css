@@ -1,0 +1,19 @@
+#zen-workspace-toast {
+  position: fixed;
+  bottom: 72px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--zen-colors-primary, #1a1a2e);
+  color: #fff;
+  padding: 5px 18px;
+  border-radius: 20px;
+  font-size: 13px;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  pointer-events: none;
+  z-index: 99999;
+}
+
+#zen-workspace-toast.visible {
+  opacity: 1;
+}

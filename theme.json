@@ -1,0 +1,9 @@
+{
+  "name": "Workspace Toast",
+  "description": "Shows a toast notification with the workspace icon and name when switching workspaces in onlysidebar mode.",
+  "version": "1.0.0",
+  "author": "https://github.com/Nelkit",
+  "homepage": "https://github.com/Nelkit/zen-workspace-toast",
+  "style": "chrome.css",
+  "scripts": ["chrome.mjs"]
+}
