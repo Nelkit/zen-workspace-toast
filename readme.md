@@ -24,18 +24,21 @@ A lightweight mod that shows a subtle toast notification with the workspace icon
 
 ## How It Works
 
-The mod intercepts `gZenWorkspaces.changeWorkspace`, the internal method Zen Browser calls when switching workspaces. After the original method resolves, it reads the workspace `icon` and `name` from the workspace object and renders a temporary overlay element at the bottom of the screen. The element fades in via CSS and is automatically hidden after the configured duration using a `clearTimeout`-guarded `setTimeout`, preventing overlapping toasts on rapid switches.
+The mod intercepts `gZenWorkspaces.changeWorkspace`, the internal method Zen Browser calls when switching workspaces. After the original method resolves, it reads the workspace `icon` and `name` from the workspace object and renders a temporary overlay element on screen. The element fades in via CSS and is automatically hidden after the configured duration using a `clearTimeout`-guarded `setTimeout`, preventing overlapping toasts on rapid switches.
 
 ---
 
 ## Preferences
 
-| Preference | Description | Default |
-|---|---|---|
-| `mod.workspace-toast.duration` | How long the toast stays visible, in milliseconds | `1800` |
-| `mod.workspace-toast.show-icon` | Whether to display the workspace emoji icon alongside the name | `true` |
+All preferences are accessible via the Sine mod settings panel.
 
-Preferences are accessible via the Sine mod settings panel.
+| Preference | Description | Options | Default |
+| --- | --- | --- | --- |
+| `mod.workspace-toast.duration` | How long the toast stays visible | Any value in ms | `1800` |
+| `mod.workspace-toast.show-icon` | Show the workspace emoji icon next to the name | `true` / `false` | `true` |
+| `mod.workspace-toast.position` | Where the toast appears on screen | `Bottom` / `Top` | `Bottom` |
+| `mod.workspace-toast.size` | Size of the toast | `Small` / `Regular` / `Large` | `Small` |
+| `mod.workspace-toast.background` | Background style | `Solid` / `Blur` | `Solid` |
 
 ---
 
